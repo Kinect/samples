@@ -199,7 +199,7 @@ namespace JointOrientationBasics
                 this.filteredJoint.Position = rawPosition;
                 this.filteredJoint.Rotation = rawRotation;
 
-                // filter tye raw joint
+                // filter the raw joint
                 this.filteredJoint = jointSmoother.UpdateJoint(jt.Value, this.filteredJoint, smoothingParams);
             
                 // set the raw joint value for the node
