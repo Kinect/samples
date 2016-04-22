@@ -316,7 +316,7 @@ namespace JointOrientationBasics
         private bool JointPositionIsValid(Joint joint)
         {
             // if joint is 0 it is not valid.
-            bool posIsValid = joint.Position.Equals(Vector3.zero);
+            bool posIsValid = !joint.Position.Equals(Vector3.zero);
             //bool orientationIsValid = joint.Rotation.Equals(Helpers.QuaternionZero);
             bool orientationIsValid = true;
 
